@@ -1,0 +1,147 @@
+Image Processing Report
+==================================================
+
+Original: IMG_5433.JPEG
+Processed: 2024-06-29_12-18-15_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: June 29, 2024
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: PXL_20240816_050918328.jpg
+Processed: 2024-08-15_22-09-18_9x16.jpg
+Aspect Ratio: 9x16
+Date Taken: August 15, 2024
+Original Size: 3024x4032
+Final Size: 711x711
+------------------------------
+
+Original: IMG_8329.JPEG
+Processed: 2025-06-15_15-38-16_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: June 15, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: ZZF_5886_Original.JPEG
+Processed: 2025-07-12_03-40-43_16x9.jpeg
+Aspect Ratio: 16x9
+Date Taken: July 12, 2025
+Original Size: 4000x2667
+Final Size: 711x711
+------------------------------
+
+Original: IMG_8997.JPEG
+Processed: 2025-07-26_18-00-43_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: July 26, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6987.JPG
+Processed: img_6987_16x9_02.jpg
+Aspect Ratio: 16x9
+Date Taken: August 15th, 2024
+Original Size: 1170x879
+Final Size: 711x711
+------------------------------
+
+Original: PXL_20250524_194035843.jpg
+Processed: 2025-05-24_12-40-35_16x9.jpg
+Aspect Ratio: 16x9
+Date Taken: May 24, 2025
+Original Size: 4032x3024
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6348.JPEG
+Processed: 2025-04-12_21-55-45_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: April 12, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_5506.JPEG
+Processed: 2024-06-29_20-20-01_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: June 29, 2024
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6735(1).JPEG
+Processed: 2025-04-13_18-29-16_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: April 13, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_0155.JPG
+Processed: 2025-02-18_10-29-23_16x9.jpg
+Aspect Ratio: 16x9
+Date Taken: February 18, 2025
+Original Size: 1620x1080
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6154.JPEG
+Processed: 2025-04-12_18-19-56_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: April 12, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6735.JPEG
+Processed: 2024-08-02_23-58-53_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: August 02, 2024
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_4184.JPEG
+Processed: 2024-04-20_18-01-09_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: April 20, 2024
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_8766.JPEG
+Processed: 2025-07-12_22-42-02_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: July 12, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_8558.JPEG
+Processed: 2025-07-01_20-45-42_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: July 01, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6268.JPEG
+Processed: 2025-04-12_19-14-39_9x16.jpeg
+Aspect Ratio: 9x16
+Date Taken: April 12, 2025
+Original Size: 1536x2048
+Final Size: 711x711
+------------------------------
+
+Original: IMG_6354.JPEG
+Processed: 2025-04-12_22-16-44_16x9.jpeg
+Aspect Ratio: 16x9
+Date Taken: April 12, 2025
+Original Size: 2048x1536
+Final Size: 711x711
+------------------------------
+

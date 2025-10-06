@@ -1,0 +1,199 @@
+/* Basic body styling */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0eadd; /* A warm, paper-like background */
+    overscroll-behavior-x: contain; /* Prevents over-scrolling the page */
+}
+
+/* The main container for our timeline */
+.timeline-container {
+    display: flex; /* This is the key! It turns on Flexbox. */
+    flex-wrap: nowrap; /* Prevents pages from wrapping to a new line. */
+    width: 100%;
+    height: 100vh; /* Makes the container fill the entire viewport height. */
+    overflow-x: auto; /* Enables horizontal scrolling ONLY when needed. */
+    overflow-y: hidden; /* Hides the vertical scrollbar. */
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* Smooth scrolling enhancements */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Title Screen - Spotify Wrapped Style */
+.title-screen {
+    flex: 0 0 auto;
+    width: 100vw; /* Full viewport width */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.title-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(44, 62, 80, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(44, 62, 80, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.title-content {
+    text-align: center;
+    color: black;
+    z-index: 2;
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    padding: 2rem 0; /* Add padding to prevent text cutoff */
+}
+
+.title-content.fade-out {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0;
+    color: black;
+    letter-spacing: -3px;
+    line-height: 1.1; /* Increased line height to prevent cutoff */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.subtitle {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: black;
+    letter-spacing: -2px;
+    line-height: 1.1; /* Increased line height to prevent cutoff */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Center timeline line */
+.timeline-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #8B4513, #D2691E, #8B4513);
+    z-index: -1;
+    transform: translateY(50vh);
+    box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
+}
+
+/* Styling for each individual scrapbook page */
+.scrapbook-page {
+    flex: 0 0 auto; /* Prevents pages from shrinking or growing. */
+    margin: 0 20px; /* Remove auto margin for custom positioning */
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 0; /* Remove any default padding */
+    overflow: visible; /* Allow dates to be visible outside the container */
+
+    /* --- For the animation --- */
+    opacity: 0; /* Start invisible */
+    transform: translateY(30px) scale(0.95); /* Start slightly lower and smaller */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition! */
+}
+
+/* All images are now square, so use consistent container width */
+.scrapbook-page {
+    width: 400px;
+}
+
+/* Different animation directions and positioning for alternating photos */
+.scrapbook-page:nth-child(odd) {
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translateY(-10vh) scale(0.95); /* 1% above center */
+}
+
+.scrapbook-page:nth-child(even) {
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translateY(10vh) scale(0.95); /* 1% below center */
+}
+
+/* The animation class we will add with JavaScript */
+.scrapbook-page:nth-child(odd).is-visible {
+    opacity: 1;
+    transform: translateY(-10vh) scale(1);
+}
+
+.scrapbook-page:nth-child(even).is-visible {
+    opacity: 1;
+    transform: translateY(10vh) scale(1);
+}
+
+
+
+/* Styling for images and captions */
+.scrapbook-page img {
+    border-radius: 4px;
+    object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+    width: 400px;
+    height: 400px;
+    display: block; /* Removes any default inline spacing */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes any default padding */
+}
+
+/* Date container styling */
+.date-container {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 10;
+    background-color: #f0eadd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.date-container p {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.scrapbook-page .caption {
+    padding: 15px;
+}
+
+.scrapbook-page h3 {
+    margin: 0 0 5px 0;
+}
+
+.scrapbook-page p {
+    margin: 0;
+    color: #666;
+}
