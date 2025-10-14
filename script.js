@@ -59,6 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial call to set correct state
     handleTitleFade();
 
+    // Timeline line animation based on scroll
+    const handleTimelineAnimation = () => {
+        const scrollLeft = timelineContainer.scrollLeft;
+        const maxScroll = timelineContainer.scrollWidth - timelineContainer.clientWidth;
+        
+        // Calculate the percentage of scroll progress
+        const scrollProgress = Math.min(scrollLeft / maxScroll, 1);
+        
+        // Update the timeline line width based on scroll progress
+        const timelineLine = document.querySelector('.timeline-container::before');
+        if (timelineLine) {
+            timelineLine.style.width = `${scrollProgress * 100}%`;
+        }
+        
+        // Use CSS custom property to update the pseudo-element
+        document.documentElement.style.setProperty('--timeline-width', `${scrollProgress * 100}%`);
+    };
+    
+    // Listen for scroll events on timeline animation
+    timelineContainer.addEventListener('scroll', handleTimelineAnimation);
+    
+    // Initial call to set correct state
+    handleTimelineAnimation();
+
 });
 
 const timelineContainer = document.querySelector('.timeline-container');

@@ -96,6 +96,28 @@ body {
     z-index: -1;
     transform: translateY(50vh);
     box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
+    
+    /* Dotted line effect */
+    background-image: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 8px,
+        #8B4513 8px,
+        #8B4513 12px,
+        transparent 12px,
+        transparent 20px,
+        #D2691E 20px,
+        #D2691E 24px,
+        transparent 24px,
+        transparent 32px,
+        #8B4513 32px,
+        #8B4513 36px
+    );
+    
+    /* Animation properties */
+    width: var(--timeline-width, 0%);
+    transition: width 0.3s ease-out;
+    overflow: hidden;
 }
 
 /* Styling for each individual scrapbook page */
@@ -127,25 +149,25 @@ body {
     align-self: center;
     margin-top: 0;
     margin-bottom: 0;
-    transform: translateY(-10vh) scale(0.95); /* 1% above center */
+    transform: translateY(0vh) scale(0.95); /* 1% above center */
 }
 
 .scrapbook-page:nth-child(even) {
     align-self: center;
     margin-top: 0;
     margin-bottom: 0;
-    transform: translateY(10vh) scale(0.95); /* 1% below center */
+    transform: translateY(0vh) scale(0.95); /* 1% below center */
 }
 
 /* The animation class we will add with JavaScript */
 .scrapbook-page:nth-child(odd).is-visible {
     opacity: 1;
-    transform: translateY(-10vh) scale(1);
+    transform: translateY(-25vh) scale(1);
 }
 
 .scrapbook-page:nth-child(even).is-visible {
     opacity: 1;
-    transform: translateY(10vh) scale(1);
+    transform: translateY(25vh) scale(1);
 }
 
 
